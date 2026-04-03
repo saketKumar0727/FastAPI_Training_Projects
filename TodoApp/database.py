@@ -2,8 +2,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
-SQLALCHEMY_DATABASE_URL = 'mysql+pymysql://root:test1234@127.0.0.1:3306/TodoApplicationDatabase'
-# SQLALCHEMY_DATABASE_URL = 'sqlite:///./todosapp.db'   for sqlite database
+# SQLALCHEMY_DATABASE_URL = 'mysql+pymysql://root:test1234@127.0.0.1:3306/TodoApplicationDatabase'
+SQLALCHEMY_DATABASE_URL = 'sqlite:///./todosapp.db'  # for sqlite database
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
