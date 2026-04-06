@@ -6,3 +6,4 @@ python-jose[cryptography]
 pymysql
 alembic
 pytest
+httpx
