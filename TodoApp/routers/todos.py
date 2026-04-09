@@ -28,7 +28,7 @@ class TodoRequest(BaseModel):
 
 
 @router.get("/")
-async def read_all(user:user_dependency, db: db_dependency):
+async def read_all(user: user_dependency, db: db_dependency):
     if user is None:
         raise HTTPException(status_code=401, detail='Authentication Failed')
     return db.query(Todos).filter(Todos.owner_id == user.get('id')).all()
